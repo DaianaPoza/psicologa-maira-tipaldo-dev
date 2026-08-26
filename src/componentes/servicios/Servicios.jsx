@@ -11,26 +11,18 @@ const servicios = [
   {
     icono: LuUserRound,
     titulo: "Terapia individual",
-    descripcion:
-      "Acompañamiento personalizado para tu bienestar emocional.",
   },
   {
     icono: LuUsersRound,
     titulo: "Espacios grupales comunitarios",
-    descripcion:
-      "Encuentros para compartir, aprender y crecer juntos.",
   },
   {
     icono: LuArmchair,
     titulo: "Espacio de supervisión para profesionales",
-    descripcion:
-      "Supervisión clínica y acompañamiento profesional.",
   },
   {
     icono: LuMessageCircle,
     titulo: "Orientación en intervenciones comunitarias",
-    descripcion:
-      "Asesoramiento y diseño de proyectos comunitarios.",
   },
 ];
 
@@ -38,39 +30,38 @@ function Servicios() {
   return (
     <section className="servicios">
       <div className="servicios__container">
+        <header className="servicios__header">
+          <h2 className="servicios__title">Servicios</h2>
 
-        <div className="servicios__header">
-          <h2 className="servicios__title">
-            Servicios
-          </h2>
+          <div
+            className="servicios__line"
+            aria-hidden="true"
+          />
+        </header>
 
-          <div className="servicios__line"></div>
-        </div>
-
-        <div className="servicios__grid">
-          {servicios.map((servicio, index) => {
+        <div className="servicios__list">
+          {servicios.map((servicio) => {
             const Icono = servicio.icono;
 
             return (
-              <article className="servicio" key={index}>
-                <div className="servicio__icono">
+              <article
+                className="servicio"
+                key={servicio.titulo}
+              >
+                <div
+                  className="servicio__icono"
+                  aria-hidden="true"
+                >
                   <Icono />
                 </div>
 
-                <div className="servicio__content">
-                  <h3 className="servicio__title">
-                    {servicio.titulo}
-                  </h3>
-
-                  <p className="servicio__description">
-                    {servicio.descripcion}
-                  </p>
-                </div>
+                <h3 className="servicio__title">
+                  {servicio.titulo}
+                </h3>
               </article>
             );
           })}
         </div>
-
       </div>
     </section>
   );
