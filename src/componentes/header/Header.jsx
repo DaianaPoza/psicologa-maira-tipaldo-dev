@@ -26,6 +26,7 @@ function Header() {
               <p>Terapeuta Cognitiva Integrativa.</p>
               <p>Terapeuta EMDR.</p>
               <p>Terapias informadas en trauma.</p>
+              <p>Terapias con perspectiva de género y diversidad.</p>
             </div>
           </div>
         </div>

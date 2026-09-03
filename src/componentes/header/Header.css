@@ -94,6 +94,13 @@ font-size: clamp(0.75rem, 2vw, 0.75rem);
   
 }
 
+
+@media (min-width: 1024px) {
+  .header__specialties {
+    gap: 20px;
+  }}
+
+
 /* IMAGEN */
 
 .header__image-container {
@@ -255,3 +262,16 @@ font-size: clamp(0.75rem, 2vw, 0.75rem);
 }
 
 
+/* Tablet */
+@media (min-width: 600px) and (max-width: 768px) {
+  .header__specialties {
+    gap: 10px;
+  }
+}
+
+/* Tablet grande y computadora */
+@media (min-width: 769px) {
+  .header__specialties {
+    gap: 10px;
+  }
+}

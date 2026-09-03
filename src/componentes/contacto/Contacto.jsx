@@ -9,7 +9,7 @@ function Contacto() {
   const email = "mai.tipaldo@gmail.com";
 
   const mensajeWhatsApp =
-    "Hola Maira, quisiera realizar una consulta.";
+    "Hola Mai, quisiera realizar una consulta.";
 
   const enlaceWhatsApp =
     `https://wa.me/${telefonoWhatsApp}?text=${encodeURIComponent(
